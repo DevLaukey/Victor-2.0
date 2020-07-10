@@ -1,0 +1,46 @@
+header.jumbotron {
+    background-color: #000000;
+    color: white;
+    font-size: 40px;
+    font-family: 'Metamorphous', cursive;
+    text-align: center;
+}
+
+.tab-content {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
+
+body {
+    font-family: 'Shadows Into Light', cursive;
+}
+
+
+}
+.address {
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+}
+.fone {
+    text-align: center;
+    text-decoration-color: #86862D
+}
+.img-responsive {
+    float: right;
+    border-radius: 80%;
+}
+.well {
+    font-family: 'Indie Flower', cursive;
+    font-size: 20px;
+    text-align: inherit;
+}
+#hash {
+    font-size: 15px;
+    font-family: 'Indie Flower', cursive;
+}
+.mail {
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+}
