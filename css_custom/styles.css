@@ -1,36 +1,52 @@
 /* Preloader */
 
-.lds-hourglass {
-    display: inline-block;
-    position: relative;
-    width: 80px;
-    height: 80px;
+.loader_bg {
+    position: fixed;
+    z-index: 9999999;
+    background: rgb(0, 0, 0);
+    width: 100%;
+    height: 100%;
 }
 
-.lds-hourglass:after {
-    content: " ";
-    display: block;
+.loader {
+    border: 0 solid transparent;
     border-radius: 50%;
-    width: 0;
-    height: 0;
-    margin: 8px;
-    box-sizing: border-box;
-    border: 32px solid #fff;
-    border-color: #fff transparent #fff transparent;
-    animation: lds-hourglass 1.2s infinite;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: calc(50vh - 75px);
+    left: calc(50vw - 75px);
 }
 
-@keyframes lds-hourglass {
+.loader:before,
+.loader:after {
+    content: '';
+    border: 1em solid #443f46;
+    border-radius: 20%;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: loader 2s linear infinite;
+    opacity: 0;
+}
+
+.loader:before {
+    animation-delay: .5s;
+}
+
+@keyframes loader {
     0% {
-        transform: rotate(0);
-        animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+        transform: scale(0);
+        opacity: 0;
     }
     50% {
-        transform: rotate(900deg);
-        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        opacity: 1;
     }
     100% {
-        transform: rotate(1800deg);
+        transform: scale(1);
+        opacity: 0;
     }
 }
 
@@ -454,4 +470,19 @@ input[type=submit] {
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
     background-color: #45a049;
+}
+
+/* project images */
+.place-img {
+    width: 350px;
+    height: 190px;
+    overflow: hidden;
+    padding-left: 40px;
+    padding-top: 20px;
+    font-family: 'Nunito', cursive
+}
+.place-img:hover {
+    transform: scale(1.1);
+    transition: all .4s ease-in;
+    filter: grayscale(1);
 }
