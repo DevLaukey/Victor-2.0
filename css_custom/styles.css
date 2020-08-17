@@ -477,7 +477,8 @@ input[type=submit]:hover {
     width: 350px;
     height: 190px;
     overflow: hidden;
-    padding-left: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
     padding-top: 20px;
     font-family: 'Nunito', cursive
 }
